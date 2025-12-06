@@ -1,0 +1,82 @@
+.footer {
+  padding: 40px 0;
+  background: #0b031c;   /* same website theme */
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+
+/* Main wrapper */
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;      /* important for mobile */
+  gap: 20px;            /* clean spacing when wrapped */
+}
+
+/* Left logo or text */
+.footer-left img {
+  height: 42px;
+}
+
+/* Right links */
+.footer-links a {
+  margin-left: 14px;
+  color: var(--muted);
+  font-size: 15px;
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #38ff6b; /* website green hover */
+}
+
+
+/* ========================================= */
+/*           RESPONSIVE BREAKPOINTS          */
+/* ========================================= */
+
+/* Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+  .footer-inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+
+  .footer-links {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .footer-links a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Phones (max-width: 380px) */
+@media (max-width: 380px) {
+  .footer-links a {
+    margin: 4px 6px;
+    font-size: 13px;
+  }
+}

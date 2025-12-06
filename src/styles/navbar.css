@@ -1,0 +1,108 @@
+/* ============================= */
+/*  FIXED GLASS NAVBAR (TOP)    */
+/* ============================= */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 2000;
+
+  background: rgba(15, 0, 30, 0.70);
+  backdrop-filter: blur(18px);
+
+  padding: 18px 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+
+  transition: padding 0.25s ease, background 0.25s ease;
+}
+
+/* NAV CONTENT WRAPPER */
+.nav-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 34px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.brand img {
+  height: 44px;
+  display: block;
+  transition: height 0.2s ease;
+}
+
+/* CTA BUTTON */
+.nav-cta {
+  background: linear-gradient(90deg, #00d03a, #38ff6b);
+  padding: 14px 32px;
+  border-radius: 50px;
+
+  color: #00140f;
+  font-weight: 700;
+  font-size: 17px;
+
+  box-shadow: 0 0 35px rgba(0, 255, 100, 0.55);
+  white-space: nowrap;
+  transition: 0.25s ease, transform 0.2s ease;
+}
+
+.nav-cta:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 50px rgba(0, 255, 100, 0.70);
+}
+
+/* ============================= */
+/*        RESPONSIVE CSS         */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .nav-inner {
+    padding: 0 22px;
+  }
+
+  .brand img {
+    height: 38px;
+  }
+
+  .nav-cta {
+    padding: 10px 22px;
+    font-size: 15px;
+    border-radius: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 14px 0;
+  }
+
+  .brand img {
+    height: 32px;
+  }
+
+  .nav-cta {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-inner {
+    padding: 0 16px;
+  }
+
+  .nav-cta {
+    padding: 7px 16px;
+    font-size: 13px;
+  }
+
+  .brand img {
+    height: 30px;
+  }
+}

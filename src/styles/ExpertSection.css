@@ -1,0 +1,161 @@
+.expert-section {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.expert-card {
+  background: #4D0C93;
+  padding: 60px;
+  border-radius: 42px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+  color: white;
+  overflow: hidden;
+
+  width: 100%;
+  max-width: 1300px;     
+  min-height: 520px;    
+  margin: auto;
+}
+
+
+.expert-left {
+  flex: 1;
+  min-width: 480px;
+}
+
+
+.expert-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.22;
+  margin-bottom: 30px;
+  max-width: 560px;
+}
+
+
+.expert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 38px 0;
+  font-size: 20px;
+}
+
+.expert-list li {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.expert-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 18px 42px;
+  border-radius: 45px;
+
+  background: linear-gradient(90deg, #00d03a, #38ff6b);
+  color: #00180f;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  box-shadow: 0 0 40px rgba(0, 255, 100, 0.45);
+  transition: 0.25s ease;
+}
+
+.expert-btn:hover {
+  transform: scale(1.07);
+}
+
+
+.expert-img {
+  height: 450px;     
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-bottom: -70px;
+}
+
+
+
+/* Large  */
+@media (max-width: 1100px) {
+  .expert-card {
+    max-width: 95%;
+    padding: 50px 45px;
+    min-height: 470px;
+  }
+
+  .expert-img {
+    height: 380px;
+  }
+
+  .expert-title {
+    font-size: 36px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .expert-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 32px;
+  }
+
+  .expert-left {
+    min-width: auto;
+  }
+
+  .expert-img {
+    height: 300px;
+    margin-top: 25px;
+    margin-bottom: -20px;
+  }
+
+  .expert-title {
+    font-size: 32px;
+  }
+
+  .expert-btn {
+    margin: 0 auto;
+  }
+}
+
+/* Phones  */
+@media (max-width: 600px) {
+  .expert-title {
+    font-size: 28px;
+  }
+
+  .expert-img {
+    height: 240px;
+    margin-bottom: 0;
+  }
+
+  .expert-btn {
+    padding: 14px 30px;
+    font-size: 17px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 400px) {
+  .expert-title {
+    font-size: 24px;
+  }
+
+  .expert-img {
+    height: 200px;
+  }
+}

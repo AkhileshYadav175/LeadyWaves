@@ -1,0 +1,138 @@
+/* ================================ */
+/*        WHY CHOOSE SECTION        */
+/* ================================ */
+
+.container {
+  text-align: center;
+}
+
+.why-section {
+  padding: 80px 0;
+  background: #f7f5ff;
+  border-top: 1px solid #dedede;
+}
+
+.why-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #1a1a1a;
+}
+
+/* ---------- GRID ---------- */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  margin-bottom: 80px;   /* ⭐ to push button down */
+}
+
+/* ---------- CARD ---------- */
+.why-card {
+  background: linear-gradient(180deg, #ffffff, #faf7ff);
+  border-radius: 22px;
+  padding: 30px 25px;
+
+  text-align: center;
+  border: 1px solid rgba(140, 106, 255, 0.25);
+  box-shadow: 0 0 22px rgba(150, 115, 255, 0.13);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- HEADING ---------- */
+.why-heading {
+  order: 1;
+  font-size: 20px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+/* ---------- ICON ---------- */
+.why-img {
+  order: 2;
+  width: 120px;
+  margin: 0 auto 18px auto;
+  display: block;
+}
+
+/* ---------- DESCRIPTION ---------- */
+.why-desc {
+  order: 3;
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* ================================ */
+/*            BUTTON                */
+/* ================================ */
+
+.why-btn {
+  background: linear-gradient(90deg, #00d03a, #38ff6b);
+  padding: 14px 32px;
+  border-radius: 50px;
+
+  color: #00140f;
+  font-weight: 700;
+  font-size: 17px;
+
+  box-shadow: 0 0 35px rgba(0, 255, 100, 0.55);
+  white-space: nowrap;
+  transition: 0.22s ease;
+  display: inline-block;
+}
+
+.why-btn:hover {
+  transform: translateY(-2px);
+  background: #00b835;
+}
+
+/* ================================ */
+/*          RESPONSIVE              */
+/* ================================ */
+
+@media (max-width: 900px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .why-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-bottom: 50px;
+  }
+
+  .why-title {
+    font-size: 28px;
+  }
+
+  .why-img {
+    width: 95px;
+  }
+
+  .why-heading {
+    font-size: 18px;
+  }
+
+  .why-desc {
+    font-size: 14px;
+  }
+
+  .why-btn {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,65 @@
+<svg width="650" height="520" viewBox="0 0 650 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- BACKGROUND GRADIENT PANEL -->
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#C03BFF"></stop>
+      <stop offset="40%" stop-color="#8728FF"></stop>
+      <stop offset="100%" stop-color="#4A0E8F"></stop>
+    </radialGradient>
+
+    <radialGradient id="grad2" cx="50%" cy="0%" r="85%">
+      <stop offset="0%" stop-color="#FF56FF"></stop>
+      <stop offset="70%" stop-color="#7C1DFF"></stop>
+      <stop offset="100%" stop-color="#300062"></stop>
+    </radialGradient>
+
+    <!-- Bubble Effect -->
+    <radialGradient id="bubble" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"></stop>
+      <stop offset="100%" stop-color="#A66CFF"></stop>
+    </radialGradient>
+  </defs>
+
+  <!-- FUNNEL SHAPES -->
+  <!-- Large Arc -->
+  <path d="M50 150 Q325 -40 600 150 L500 250 Q325 120 200 250 Z" fill="url(#grad1)" opacity="0.9"></path>
+
+  <!-- Middle Arc -->
+  <path d="M120 240 Q325 60 530 240 L450 310 Q325 200 230 310 Z" fill="url(#grad2)" opacity="0.9"></path>
+
+  <!-- Bottom Arc -->
+  <path d="M200 330 Q325 200 450 330 L380 380 Q325 300 260 380 Z" fill="#32005A" opacity="0.8"></path>
+
+  <!-- Bottom Funnel Tip -->
+  <path d="M300 380 L350 380 L325 420 Z" fill="#FFFFFF" opacity="0.7"></path>
+
+  <!-- TEXT LABELS -->
+  <text x="310" y="220" font-size="26" fill="white" font-weight="600">ACTION</text>
+  <text x="305" y="280" font-size="26" fill="white" font-weight="600">DESIRE</text>
+  <text x="300" y="340" font-size="24" fill="white" font-weight="600">INTEREST</text>
+  <text x="278" y="410" font-size="22" fill="white" font-weight="600">ATTENTION</text>
+
+  <!-- BUBBLE: MORE LEADS -->
+  <circle cx="230" cy="120" r="38" fill="url(#bubble)" opacity="0.85"></circle>
+  <text x="205" y="120" font-size="16" fill="#000" font-weight="700">More</text>
+  <text x="205" y="140" font-size="14" fill="#000" font-weight="600">Leads</text>
+
+  <!-- BUBBLE: 2x Customer Acquisition -->
+  <circle cx="520" cy="160" r="42" fill="url(#bubble)" opacity="0.85"></circle>
+  <text x="500" y="160" font-size="20" fill="#000" font-weight="800">2x</text>
+  <text x="480" y="180" font-size="14" fill="#000" font-weight="600">Customer</text>
+  <text x="485" y="195" font-size="14" fill="#000" font-weight="600">Acquisition</text>
+
+  <!-- BUBBLE: 5x Revenue Increase -->
+  <circle cx="170" cy="260" r="45" fill="url(#bubble)" opacity="0.85"></circle>
+  <text x="150" y="260" font-size="22" fill="#000" font-weight="800">5x</text>
+  <text x="138" y="280" font-size="14" fill="#000" font-weight="600">Revenue</text>
+  <text x="138" y="295" font-size="14" fill="#000" font-weight="600">Increase</text>
+
+  <!-- BUBBLE: ROI Improved -->
+  <circle cx="450" cy="330" r="38" fill="url(#bubble)" opacity="0.85"></circle>
+  <text x="430" y="330" font-size="18" fill="#000" font-weight="800">ROI</text>
+  <text x="425" y="350" font-size="14" fill="#000" font-weight="600">Improved</text>
+
+</svg>

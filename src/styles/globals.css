@@ -1,0 +1,129 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ROOT COLORS */
+:root {
+  --bg1: #ffffff;
+  --bg2: #ffffff;
+  --accent-start: #6f2ef7;
+  --accent-end: #06b6d4;
+  --green: #18c63d;
+  --muted: #b9b9c6;
+  --card: rgba(255,255,255,0.03);
+}
+
+/* UNIVERSAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+/* GLOBAL BODY */
+body {
+  font-family: "Poppins", system-ui, sans-serif;
+  background: radial-gradient(
+              1000px 500px at 10% 20%, 
+              rgba(249, 248, 250, 0.25), 
+              transparent)
+            ,
+            linear-gradient(180deg, var(--bg1), var(--bg2));
+  color: #fff;
+  overflow-x: hidden; /* ⛔ Prevents horizontal scroll everywhere */
+}
+
+/* GLOBAL CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* GLOBAL BUTTON STYLE */
+.btn-primary {
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+
+  background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+  color: #001018;
+
+  box-shadow: 0 10px 40px rgba(10, 10, 30, 0.6);
+  transition: 0.25s ease-in-out;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  transform: scale(1.06);
+}
+
+/* ------------------------------------------------ */
+/*                RESPONSIVE GLOBAL FIXES           */
+/* ------------------------------------------------ */
+
+/* Large laptops */
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+/* Normal laptops */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+/* Tablets landscape */
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Tablets portrait / iPads */
+@media (max-width: 900px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+/* Phones large */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 15px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+/* Very small (old phones) */
+@media (max-width: 350px) {
+  body {
+    font-size: 12px;
+  }
+}

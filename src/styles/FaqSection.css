@@ -1,0 +1,149 @@
+/* ============================== */
+/*           FAQ SECTION          */
+/* ============================== */
+
+.faq-sec {
+  padding: 100px 0;
+  background: #ffffff;
+  color: #000;
+  overflow-x: hidden;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.faq-wrapper {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.faq-item {
+  background: #faf5ff;
+  border-radius: 18px;
+  padding: 22px 28px;
+  transition: 0.3s ease;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+
+.faq-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c2cff, #b25dff);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.faq-btn.open {
+  transform: rotate(180deg);
+}
+
+/* ANSWER */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.35s ease;
+  padding-right: 40px;
+  color: #333;
+}
+
+.faq-answer.show {
+  max-height: 900px;
+  opacity: 1;
+  margin-top: 15px;
+}
+
+.faq-answer p {
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+
+
+/* Tablets*/
+@media (max-width: 900px) {
+  .faq-title {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+
+  .faq-item {
+    padding: 20px 24px;
+  }
+
+  .faq-question span {
+    font-size: 17px;
+  }
+}
+
+/* Phones  */
+@media (max-width: 600px) {
+  .faq-title {
+    font-size: 30px;
+  }
+
+  .faq-wrapper {
+    width: 92%;
+  }
+
+  .faq-item {
+    padding: 18px 20px;
+  }
+
+  .faq-question span {
+    font-size: 16px;
+  }
+
+  .faq-answer p {
+    font-size: 15px;
+  }
+}
+
+/* Small  */
+@media (max-width: 400px) {
+  .faq-title {
+    font-size: 26px;
+  }
+
+  .faq-item {
+    padding: 16px 18px;
+  }
+
+  .faq-question span {
+    font-size: 15px;
+  }
+
+  .faq-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+}
+

@@ -1,0 +1,140 @@
+/* ======================================= */
+/*        TESTIMONIAL SECTION STYLE        */
+/* ======================================= */
+
+.testimonial-section {
+  padding: 80px 0;
+  text-align: center;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+/* TITLE */
+.testi-title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.testi-sub {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* VIDEO BOX */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.testi-video {
+  width: 100%;
+  height: 400px;     /* Better balanced height */
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+  transition: 0.25s ease;
+}
+
+/* Hover Effect */
+.testi-video:hover {
+  transform: scale(1.03);
+}
+
+/* PLAY BUTTON */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  
+  background: white;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: .88;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+
+/* NAME + ROLE */
+.testi-name {
+  margin-top: 12px;
+  font-weight: 700;
+  color: #6f2ef7;
+  font-size: 18px;
+}
+
+.testi-role {
+  font-size: 15px;
+  color: #555;
+}
+
+
+
+/* ======================================= */
+/*              RESPONSIVE                 */
+/* ======================================= */
+
+/* TABLETS */
+@media(max-width: 1100px) {
+  .testi-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .testi-video {
+    height: 360px;
+  }
+}
+
+/* IPAD & SMALL LAPTOP */
+@media(max-width: 900px) {
+  .testi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testi-video {
+    height: 330px;
+  }
+}
+
+/* MOBILE */
+@media(max-width: 600px) {
+  .testi-title {
+    font-size: 30px;
+  }
+
+  .testi-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .testi-video {
+    height: 300px;
+  }
+
+  .play-btn {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+  }
+}
+
+/* SMALL MOBILE */
+@media(max-width: 400px) {
+  .testi-video {
+    height: 240px;
+  }
+}

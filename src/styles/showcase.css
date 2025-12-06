@@ -1,0 +1,117 @@
+
+
+.showcase {
+  padding: 70px 0;
+  background: linear-gradient(180deg, #170133, #250046, #32005a);
+  overflow: hidden;
+}
+
+
+.scroll-wrapper {
+  width: 100vw;
+  overflow: hidden;
+}
+
+
+.scroll-track {
+  display: flex;
+  gap: 26px;
+  padding-left: 20px;
+  animation: autoScroll 22s linear infinite;
+  will-change: transform;
+}
+
+
+.pair-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 240px; 
+}
+
+
+.tag {
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: #fff;
+
+  background: rgba(150, 100, 255, 0.25);
+  border: 1px solid rgba(190, 150, 255, 0.4);
+  box-shadow: 0 0 14px rgba(150, 100, 255, 0.6);
+
+  margin-bottom: 14px;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+/* CARD IMAGE */
+.case-img {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: top center;
+
+  border-radius: 16px;
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.55);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover Zoom Effect */
+.case-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.6);
+}
+
+/* SCROLL ANIMATION */
+@keyframes autoScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-140%); } /* smoother + longer */
+}
+
+/* STOP MOVEMENT ON HOVER */
+.scroll-track:hover {
+  animation-play-state: paused;
+}
+
+
+
+@media (max-width: 1100px) {
+  .pair-box {
+    min-width: 220px;
+  }
+  .case-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .pair-box {
+    min-width: 200px;
+  }
+  .case-img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pair-box {
+    min-width: 180px;
+  }
+  .case-img {
+    height: 220px;
+  }
+  .tag {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pair-box {
+    min-width: 160px;
+  }
+  .case-img {
+    height: 200px;
+  }
+}
